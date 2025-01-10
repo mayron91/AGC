@@ -1,4 +1,125 @@
 .header {
-    border: 1px solid;
-    padding: 15px 0;
+    height: 99PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__img {
+    width: 192PX;
+    height: 40PX;
+    margin-left: 43PX;
+}
+.header_center a {
+    font-size: 18PX;
+    margin: 0 35PX;
+}
+.hamb_icon {
+    margin-right: 50PX;
+    width: 24PX;
+    height: 24PX;
+}
+/*burger menu*/
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 43PX;
+    }
+    #menu__toggle {
+        opacity: 0;
+        margin-right: -10PX;
+      }
+      
+      #menu__toggle:checked ~ .menu__btn::before {
+        content: url("../img/close.svg");
+        width: 24PX;
+        height: 24PX;
+      }
+    
+
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        right: 100PX;
+      }
+      
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        top: 20px;
+        right: 20px;
+      
+        width: auto;
+        height: 26px;
+      
+        cursor: pointer;
+        z-index: 999;
+      }
+      .menu__btn::before {
+        content:url("../img/menu.svg");
+        text-transform: uppercase;
+        width: 100%;
+      }
+      .menu__btn > span::before {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+      
+        transition-duration: .25s;
+      }
+      .menu__btn a {
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      
+      .menu__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        visibility: hidden;
+        right: 100PX;
+        width: 250PX;
+        height: 390PX;
+        margin: -36PX 0 0 0;
+        /* margin: 1.875rem 0 0 0; */
+        padding: 100PX 0 0 0;
+        list-style: none;
+        z-index: 998;
+        transition-duration: .25s;
+        padding-top: 0PX;
+        background-color: #fff;
+        border-radius: 16PX;
+      }
+      .menu__box li:first-child {
+        margin-top: 50PX;
+      }
+      
+      .menu__item {
+        display: block;
+        padding: 20PX 24px;
+      
+        font-weight: 400;
+font-size: 18px;
+line-height: 130%;
+letter-spacing: 0.1em;
+        text-decoration: none;
+        transition-duration: .25s;
+      }
+      .menu__item:hover {
+        background-color: #F2F2F2;
+      }

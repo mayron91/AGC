@@ -1,12 +1,32 @@
 <header class="header">
     <div class="container">
-        <a href="/" class="logo">
-            <img src="img/logo.svg" alt="" class="logo__img">
-        </a>
-
-        <div class="header__contacts">
-            <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> <br>
-            <a href="tel:" class="phone">{{ vars.email }}</a>
+        <div class="header_wrapper">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="" class="logo__img">
+            </a>
+            <div class="header_center">
+                <a href="/">Коврики для ванн</a>
+                <a href="/">Шторы для ванн</a>
+                <a href="/">Аксессуары</a>
+            </div>
+            <div class="hamburger-menu">
+                <a class="hamb_icon" href="/"><img src="../img/search.svg" alt=""></a>
+                <a class="hamb_icon" href="/"><img src="../img/bag.svg" alt=""></a>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                        <li><a class="menu__item" href="#">Коврики для ванн</a></li>
+                        <li><a class="menu__item" href="#">Шторы для ванны</a></li>
+                        <li><a class="menu__item" href="#">Аксессуары</a></li>
+                        <li><a class="menu__item" href="#">Информация</a></li>
+                        <li><a class="menu__item" href="#">Контакты</a></li>
+                </ul>
+              </div>
         </div>
+        
+
     </div>
 </header>
