@@ -4,7 +4,7 @@
     background-color: #000;
     height: 286PX;
 }
-.footer p,a,li {
+.footer p,.footer a, .footer li {
     color: #8D8D8D;
     font-size: 18PX;
 }
@@ -73,7 +73,7 @@
     width: 115PX;
     height: 18PX;
 }
-.footer p,a,li {
+.footer p, .footer a, .footer li {
     color: #8D8D8D;
     font-size: 14PX;
 }
@@ -90,8 +90,8 @@
 }
 
 .footer_social img {
-    width: 18PX;
-    height: 18PX;
+    width: 24PX;
+    height: 24PX;
     margin-right: 15PX;
 }
 .footer_cat {margin-top: 30PX;}
@@ -122,7 +122,7 @@
         width: 115PX;
     height: 18PX;
     }
-    .footer p,a,li {
+    .footer p, .footer a, .footer li {
         color: #8D8D8D;
         font-size: 14PX;
     }
