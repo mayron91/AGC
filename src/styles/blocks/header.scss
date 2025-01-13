@@ -1,5 +1,5 @@
 .header {
-    height: 99PX;
+    height: 85PX;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15PX;
 }
 .logo__img {
     width: 192PX;

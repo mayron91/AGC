@@ -1,0 +1,37 @@
+.swiper-button-prev {
+    content: url("../img/index/arrow.svg");
+    width: 32PX !important;
+    height: 32PX !important;
+    margin: -45PX 0 0 35PX !important;
+}
+.swiper-button-next {
+    content: url("../img/index/arrow.svg");
+    width: 32PX !important;
+    height: 32PX !important;
+    rotate: 180deg;
+    margin: -45PX 35PX 35PX 0PX !important;
+}
+.swiper {
+    width: 100%;
+    max-width: 1440PX;
+    margin: 0 auto;
+}
+.block_after_slider {
+    width: 100%;
+    margin-top: -183PX;
+    height: 64PX;
+    border-radius: 25PX 25PX 0 0;
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+}
+.swiper-slide {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,44 @@
+<section class="slider_on_index">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/index/slider.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/slider2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/slider3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/slider4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/slider5.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/slider6.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/slider7.jpg" alt=""></div>
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="block_after_slider"></div>
+  </div>
+
+  
+    
+</section>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoplay: {
+   delay: 5000,
+ },
+
+});
+</script>
