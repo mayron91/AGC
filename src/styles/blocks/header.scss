@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    max-width: 1440PX;
+    margin: 0 auto;
+    background-color: #fafafa;
 }
 .header_wrapper {
     display: flex;
@@ -10,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 15PX;
+    
 }
 .logo__img {
     width: 192PX;
@@ -30,6 +35,7 @@
     .hamburger-menu {
         display: flex;
         margin-right: 43PX;
+        position: relative;
     }
     #menu__toggle {
         opacity: 0;
@@ -45,7 +51,7 @@
 
       #menu__toggle:checked ~ .menu__box {
         visibility: visible;
-        right: 100PX;
+        right: -15PX;
       }
       
       .menu__btn {
@@ -91,14 +97,14 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        position: fixed;
+        position: absolute;
         visibility: hidden;
-        right: 100PX;
+        right: 0;
         width: 250PX;
-        height: 390PX;
-        margin: -36PX 0 0 0;
-        /* margin: 1.875rem 0 0 0; */
-        padding: 100PX 0 0 20PX;
+        padding: 0;
+        height: 380PX;
+        top: -40PX;
+        right: -15PX;
         list-style: none;
         z-index: 998;
         transition-duration: .25s;
@@ -106,16 +112,19 @@
         background-color: #fff;
         border-radius: 16PX;
       }
+      .menu__box li {
+        width: 100%;
+      }
       .menu__box li:first-child {
-        margin-top: 50PX;
+        margin-top: 80PX;
       }
       
       .menu__item {
         display: block;
-        padding: 20PX 24px;
-      
+        padding: 15PX 40PX;
+      width: 100%;
         font-weight: 400;
-font-size: 18px;
+font-size: 18PX;
 line-height: 130%;
 letter-spacing: 0.1em;
         text-decoration: none;
@@ -124,11 +133,17 @@ letter-spacing: 0.1em;
       .menu__item:hover {
         background-color: #F2F2F2;
       }
+
+.sticky {
+  position: fixed !important;
+  z-index: 999;
+  left: 50%;
+       transform: translateX(-50%);
+}
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .header {
     height: 80PX;
-    margin-left: 5px;
 
 }
   .header_center {
@@ -149,8 +164,7 @@ letter-spacing: 0.1em;
   /*360*/
   @media only screen and (max-width: 767px) {
     .header {
-      height: 80PX;
-      margin-left: 5px;
+      height: 60PX;
 
   }
     .header_center {
