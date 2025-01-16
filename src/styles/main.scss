@@ -55,7 +55,7 @@ a {
 .container {
     width: 100%;
     max-width: 1440PX;
-    padding: 0 40px;
+    padding: 0;
     margin: 0 auto;
     transition: $base-transition;
     @include respond-to('medium') {
@@ -85,6 +85,7 @@ a {
 @import './blocks/header.scss';
 @import './blocks/footer.scss';
 @import './blocks/index.scss';
+@import './blocks/catalog.scss';
 
 
 
