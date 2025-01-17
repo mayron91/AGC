@@ -47,7 +47,7 @@
 .catalog_wr {
     display: flex;
     flex-direction: column;
-    margin: 20PX 0 0 45PX;
+    margin: 20PX 0 0 86PX;
 }
 .catalog_wr h2 {
     font-size: 64PX;
@@ -164,7 +164,7 @@
     padding: 0;
     margin: 0;
     position: relative;
-    margin-left: 45PX;
+    margin-left: 86PX;
 }
 .ideas h2::after {
     content: url("../img/index/ideas_line.svg");
@@ -176,7 +176,7 @@
     margin-top: 60PX;
     display: flex;
     flex-direction: row;
-    margin-left: 45PX;
+    margin-left: 86PX;
 }
 .ideas_card {
     width: 385PX;
@@ -213,27 +213,27 @@
     font-weight: 400;
     font-size: 64PX;
     color: #000;
-    margin: 45PX 0 0 45PX;
+    margin: 45PX 0 0 86PX;
     padding: 0;
 }
 .conditions p {
     font-size: 24PX;
     font-weight: 300;
     color: #020000;
-    margin: 45PX 0 0 45PX;
+    margin: 45PX 0 0 86PX;
     padding: 0;
 }
 .delivery {
     font-size: 24PX;
     font-weight: 500;
     color: #020000;
-    margin: 40PX 0 0 45PX;
+    margin: 40PX 0 0 86PX;
     display: block;
 }
 .conditions_wr {
     display: flex;
     flex-direction: row;
-    margin: 20PX 0 0 45PX;
+    margin: 20PX 0 0 86PX;
 }
 .conditions_cart {
     width: 400PX;
@@ -261,13 +261,13 @@
 .why_us h2 {
     font-size: 64PX;
     font-weight: 400;
-    margin: -10PX 0 0 45PX;
+    margin: -10PX 0 0 86PX;
    
 }
 .why_us_wr {
     display: flex;
     flex-direction: row;
-    margin: 80PX 0 0 45PX;
+    margin: 80PX 0 0 86PX;
 }
 .why_us_card {
     width: 280PX;
@@ -804,7 +804,7 @@
         aspect-ratio: 12/5;
     }
 }  
-@media only screen and (min-width: 768px) and (max-width: 1440px)   {
+@media only screen and (min-width: 768px) and (max-width: 1439px)   {
     .swiper-slide {
         aspect-ratio: 9/3;
     }
