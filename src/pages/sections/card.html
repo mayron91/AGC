@@ -1,0 +1,86 @@
+<section class="card">
+    <div class="container">
+        <div class="card_wr">
+            <div class="card_gallery">
+                <div class="wrapper">
+                                     
+                    <div class="image-gallery">
+                      <aside class="thumbnails">
+                        <a href="#" class="selected thumbnail" data-big="img/card/image.jpg ">
+                          <div class="thumbnail-image" style="background-image: url(img/card/image.jpg)"></div>
+                        </a>
+                        <a href="#" class="thumbnail" data-big="img/card/image.jpg ">
+                          <div class="thumbnail-image" style="background-image: url(img/card/image.jpg)"></div>
+                        </a>
+                        <a href="#" class="thumbnail" data-big="img/card/image.jpg ">
+                          <div class="thumbnail-image" style="background-image: url(img/card/image.jpg)"></div>
+                        </a>
+                      </aside>
+                    
+                      <main class="primary" style="background-image: url(img/card/image.jpg);"></main>
+                    </div>
+                    
+                    </div>
+            </div>
+            <div class="card_info_wr">
+                <h1>Коврик Голубой Кашемир 50×60 см</h1>
+                <h2 class="price">1 770 р.</h2>
+                <div class="size_wr">
+                    <h3>Размеры</h3>
+                    <div class="size size_active">50Х50</div>
+                    <div class="size">50Х60</div>
+                    <div class="size">70Х120</div>
+                    <div class="size">120Х120</div>
+                </div>
+                <button class="buy_btn">Купить</button>
+                <p class="card_info">Этот коврик как будто создан для Вас! Он манит своей мягкостью и  сочностью. Яркий и неординарный, но такой простой и любимый аксессуар в  Вашу ванную комнату. Задайте ей цвет и настроение!</p>
+                <div class="characteristics_wr">
+                    <h3>Характеристики</h3>
+                    <div class="characteristics_wr_opt">
+                        <p>Размер:</p>
+                        <p>50×60 см;</p>
+                    </div>
+                    <div class="characteristics_wr_opt">
+                        <p>Рисунок:</p>
+                        <p>Без рисунка;</p>
+                    </div>
+                    <div class="characteristics_wr_opt">
+                        <p>Вес:</p>
+                        <p>2050 гр/м2;</p>
+                    </div>
+                    <div class="characteristics_wr_opt">
+                        <p>Состав:</p>
+                        <p>100% хлопок;</p>
+                    </div>
+                    <div class="characteristics_wr_opt">
+                        <p>Цвет:</p>
+                        <p>Оливка;</p>
+                    </div>
+                    <div class="characteristics_wr_opt">
+                        <p>Покрытие:</p>
+                        <p>Антислип (напыление).</p>
+                    </div>
+                </div>
+                <div class="deliver_wr">
+                    <h3>Доставка</h3>
+                    
+                    <ul><p>Выбирайте доставку, удобную для вас:</p>
+                        <li>Доставка по Москве 500₽</li>
+                        <li>Доставка в регионы СДЭК до пункта выдачи или курьер до двери. Стоимость зависит от дальности региона.</li>
+                        <li>Самовывоз с нашего склада в Москве. Высоковольтный проезд д.1, стр 21</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $('.thumbnail').on('click', function() {
+  var clicked = $(this);
+  var newSelection = clicked.data('big');
+  var $img = $('.primary').css("background-image","url(" + newSelection + ")");
+  clicked.parent().find('.thumbnail').removeClass('selected');
+  clicked.addClass('selected');
+  $('.primary').empty().append($img.hide().fadeIn('slow'));
+});
+</script>

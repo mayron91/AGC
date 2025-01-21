@@ -1,0 +1,222 @@
+/*breadcr*/
+.breadcr {
+    background-color: #FAFAFA  ;
+}
+.breadcr ul {
+    display: inline-flex;
+    margin: 25PX 0 0 20PX;
+}
+.breadcr ul li {
+    list-style-type: none;
+    color: #020000;
+    font-size: 16PX;
+    margin: 0;
+    padding: 0;
+}
+.breadcr ul li::before {
+    content: "●";
+    color: #F4CC6C;
+    width: 6PX;
+    height: 6PX;
+    margin-left: 12PX;
+    margin-right: 12PX;
+}
+.breadcr ul li:first-child::before {
+    content: "";
+}
+
+/*gallery*/
+.card_gallery {
+    margin: 65PX 85PX 0 85PX;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .image-gallery {
+    margin: 0 auto;
+    display: table;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .primary,
+  .thumbnails {
+    display: table-cell;
+  }
+  
+  .thumbnails {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .primary {
+    width: 540PX;
+    height: 618PX;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 16PX;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
+  }
+  
+  .thumbnail-image {
+    width: 168PX;
+    height: 190PX;
+    margin: 25PX 20PX 25PX 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 16PX;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
+  }
+  
+  /*card*/ 
+  .card {background-color: #FAFAFA  ;}
+  .card_wr {
+    display: flex;
+    flex-direction: row;
+  }
+  .card_info_wr h1 {
+    font-weight: 400;
+    font-size: 36PX;
+    color: #020000;
+    margin-top: 65PX;
+  }
+  .price {
+    font-size: 36PX;
+    color: #020000;
+    font-weight: 600;
+  }
+  .card_info_wr h3 {
+    font-size: 24PX;
+    font-weight: 400;
+    color: #020000;
+  }
+  .size_wr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.size_wr h3 {
+    width: 100%;
+    margin: 10PX 0 20PX 0;
+    padding: 0;
+}
+.size {
+    width: 110PX;
+    height: 43PX;
+    background-color: #fff;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 8PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20PX;
+    font-size: 16PX;
+    color: #020000;
+}
+.size:hover {
+    cursor: pointer;
+}
+.size_active {
+    background-color: #F4CC6C;
+}
+.buy_btn {
+    width: 254PX;
+    height: 61PX;
+    background-color: #020000;
+    color: #fff;
+    font-size: 24PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8PX;
+    margin-top: 45PX;
+    border: none;
+}
+.buy_btn:hover {
+    cursor: pointer;
+}
+.card_info {
+    font-size: 16PX;
+    font-weight: 300;
+    color: #020000;
+    margin-top: 40PX;
+    margin-bottom: 40PX;
+    padding: 0 60PX 0 0;
+}
+
+.characteristics_wr h3 {
+    width: 100%;
+}
+.characteristics_wr_opt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.characteristics_wr_opt p {
+    width: auto;
+    font-size: 16PX;
+    font-weight: 300;
+    color: #020000;
+    margin: 0;
+    padding: 0 0 20PX 0;
+}
+.characteristics_wr_opt p:first-child {
+    width: 130PX;
+}
+.deliver_wr h3 {
+    margin-top: 20PX;
+}
+.deliver_wr ul {
+    padding: 0;
+    margin: 0;
+    font-size: 16PX;
+    font-weight: 300;
+    color: #020000;
+}
+.deliver_wr li {
+    list-style: disc;
+    margin: 10PX 0 20PX 20PX;
+}
+/*inter*/
+.inter {
+    background-color: #FAFAFA  ;
+}
+.inter_wr h2 {
+    padding: 0;
+    margin: 120PX 0 0 90PX;
+    font-size: 64PX;
+    font-weight: 400;
+    color: #000;
+}
+.inter_wr_card {
+    display: flex;
+    flex-direction: row;
+    padding: 20PX 0 250PX 0;
+    margin: 20PX 0 0 100PX;
+}
+.inter_wr_card>.cat_card {
+    margin-right: 32PX;
+}
+.inter_wr_card>.cat_card {
+    margin-right: 32PX;
+    width: 185PX;
+    height: 210PX;
+}
+.inter_wr_card>.cat_card img {
+    width: 185PX;
+    height: 210PX;
+}
+.inter_wr_card>.cat_card>.img_price_wr img {
+    width: 24PX;
+    height: 24PX;
+}
