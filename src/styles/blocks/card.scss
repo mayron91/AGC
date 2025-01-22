@@ -225,9 +225,147 @@
 }
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
-    
+    .card_wr {
+        flex-direction: column;
+       }
+       .inter_wr_card {
+        flex-direction: column;
+       }
+       .breadcr ul li {
+        font-size: 12PX;
+        font-weight: 300;
+       }
+       .breadcr li:first-child {
+        display: none;
+       }
+       .breadcr li:last-child {
+        display: none;
+       }
+       .breadcr ul li::before {
+        content: "<";
+        color: #020000;
+        margin-right: 10PX;
+       }
+       .card_info_wr h1 {
+        display: none;
+       }
+       .mob_title {
+        display: block;
+        
+    }
+    .mob_title h1 {
+        font-size: 24PX;
+        font-weight: 400;
+        color: #020000;
+        width: 100%;
+        margin: 40PX 0 0 5PX;
+    }
+    .breadcr ul {
+        margin: 30PX 0 0 -50PX;
+    }
+    .card_gallery {
+        margin: 40PX 0 0 0;
+    }
+    .image-gallery {
+        align-items: center;
+    }
+    .thumbnails {
+        justify-content: center;
+    }
+    .primary {
+        
+        min-width: 325PX;
+        min-height: 325PX;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .thumbnail {
+        margin: 20PX 12PX 20PX 0;
+    }
+    .thumbnail-image {
+        min-width: 100PX;
+        min-height: 116PX;
+       margin: 0;
+    }
+    .inter_wr h2 {
+        margin: 0;
+        font-size: 24PX;
+    }
+    .size_wr h3 {
+        font-size: 18PX;
+        font-weight: 600;
+        margin-left: 5PX;
+    }
+    .size {
+        min-width: 56PX;
+        width: auto;
+        height: 34PX;
+        padding: 0 10PX;
+        font-size: 12PX;
+        border-radius: 12PX;
+        margin-right: 10PX;
+        margin-left: 5PX;
+    }
+    .buy_btn {
+        width: 100%;
+        max-width: 325PX;
+        height: 54PX;
+        font-size: 18PX;
+        font-weight: 400;
+        margin: 40PX 0 0 5PX;
+    }
+    .card_info {
+        padding: 5PX;
+        font-size: 14PX;
+        margin-top: 55PX;
+        margin-bottom: 25PX;
+
+    }
+    .characteristics_wr h3 {
+        font-size: 18PX;
+        margin: 0 0 20PX 5PX;
+    }
+    .characteristics_wr_opt {
+        margin-left: 5PX;
+    }
+    .characteristics_wr_opt p {
+        font-size: 14PX;
+        padding: 0 0 18PX 0;
+    }
+    .deliver_wr h3 {
+        font-size: 18PX;
+        font-weight: 600;
+        margin-left: 5PX;
+        margin-top: 25PX;
+    }
+    .deliver_wr ul {
+        margin-left: 5PX;
+        font-size: 14PX;
+    }
+    .inter_wr {
+        margin: 65PX 0 0 5PX;
+    }
+    .inter_wr_card {
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+       padding-bottom: 120PX;
+    }
+    .inter_wr_card>.cat_card {
+        width: 150PX;
+        height: 256PX;
+        margin: 20px;
+    }
+    .inter_wr_card>.cat_card img {
+        width: 126PX;
+        height: 126PX;
+    }
     }
 /*360*/
+
 @media only screen and (max-width: 767px) {
        .card_wr {
         flex-direction: column;
@@ -270,21 +408,32 @@
     .card_gallery {
         margin: 40PX 0 0 0;
     }
+    .image-gallery {
+        align-items: center;
+    }
+    .thumbnails {
+        justify-content: center;
+    }
     .primary {
-        width: 100%;
+        max-width: 460PX;
+        max-height: 460PX;
         min-width: 325PX;
         min-height: 325PX;
+        width: 100%;
         height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
 
     }
     .thumbnail {
         margin: 20PX 12PX 20PX 0;
     }
     .thumbnail-image {
-        width: 100%;
-        height: auto;
         min-width: 100PX;
         min-height: 116PX;
+        width: 100%;
+        height: auto;
        margin: 0;
     }
     .inter_wr h2 {
@@ -362,3 +511,9 @@
         height: 126PX;
     }
     }
+/*special*/
+@media only screen and (max-width: 700px) {
+    .inter_wr_card {
+       justify-content: space-between;
+    }
+}
