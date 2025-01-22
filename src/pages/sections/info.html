@@ -1,0 +1,85 @@
+<section class="info">
+    <div class="container">
+    <div class="info_wr">
+        <h1>Информация</h1>
+        <h2>Доставка</h2>
+        <ul>
+            <li><p>Самовывоз Высоковольтный проезд, д.1, стр. 21 – <b>бесплатно</b></p></li>
+            <li><p>Доставка по Москве – <b>500 руб.</b></p></li>
+            <li><p>Доставка в регионы СДЭК или Почта России <b>рассчитывается индивидуально</b></p></li>
+            <li><p>Доставка заказа на сумму свыше 30 000 руб. – по Москве <b>бесплатно</b>, за МКАД + <b>30 руб./км</b></p></li>
+        </ul>
+        
+    </div>  
+    <div class="info_pay">
+        <h2>Оплата</h2>
+        <ul>
+            <li><p>Оплата курьеру наличными, при получении товара</p></li>
+            <li><p>Оплата по безналичному расчету для юридических и физических лиц</p></li>
+        </ul>
+    </div>  
+    <div class="faq">
+        <h2>FAQ</h2>
+        <div class="accordion">
+            <!-- Accordion item 1 -->
+            <div class="accordion-item">
+                <button class="accordion-button">
+                <span>Можно ли стирать коврики?</span>
+                <i class="icon" data-open-src="/img/info/arrow_open.svg" data-closed-src="/img/info/arrow_close.svg" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Да! Все наши коврики можно стирать при 40 градусах в машинке отдельно от других изделий. Лучше выбирать режим хлопок и выставлять температуру 40, тк на режиме «хлопок» больше воды, что способствует более  эффективному уходу. Мы не рекомендуем использовать кондиционер, тк кондиционер снижает  гигроскопичность хлопка, те способность впитывать влагу. Но если вы  хотите, чтобы коврики были мягче, то в целом, использование кондиционера не критично. Так же для смягчения можно использовать небольшое  количество лимонной кислоты.
+                        Обращайте внимание на максимальный вес загрузки сухого белья в вашей  машинке. Хлопок обладает высокой гигроскопичностью, следовательно, для  стирки на режиме хлопок используется повышенное количество воды, а  изделие из хлопка становится примерно в 2 раза тяжелее. Если у вас  большой коврик, то всегда стирайте его отдельно. Коврики маленького  размера можно стирать вместе, если в сухом виде они не превышают  максимальный вес загрузки.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">
+                <span>Где купить?</span>
+                <i class="icon" data-open-src="/img/info/arrow_open.svg" data-closed-src="/img/info/arrow_close.svg" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio cumque vel qui quae quas consequatur soluta perspiciatis similique harum odit dolores laboriosam, placeat molestiae dicta corporis veritatis sed ad!</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">
+                <span>Где находится производство?</span>
+                <i class="icon" data-open-src="/img/info/arrow_open.svg" data-closed-src="/img/info/arrow_close.svg" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro ipsa voluptatem unde tempore facere. Nam asperiores et veniam recusandae enim placeat obcaecati eum suscipit aut. Pariatur expedita amet accusantium.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+
+    accordionButtons.forEach((button, index) => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.icon');
+
+        // Set initial icon based on whether this is the first button
+        if (index === 0) {
+           content.classList.add('show');
+           icon.style.backgroundImage = `url(${icon.dataset.openSrc})`;
+        } else {
+           icon.style.backgroundImage = `url(${icon.dataset.closedSrc})`;
+        }
+
+
+        button.addEventListener('click', function() {
+           content.classList.toggle('show');
+            if(content.classList.contains('show')) {
+                icon.style.backgroundImage = `url(${icon.dataset.openSrc})`;
+            } else {
+                icon.style.backgroundImage = `url(${icon.dataset.closedSrc})`;
+            }
+        });
+    });
+});
+
+</script>
