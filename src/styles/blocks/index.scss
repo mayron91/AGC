@@ -154,8 +154,11 @@
 }
 /*ideas*/
 .ideas {
-    margin-top: 45PX;
-    
+    padding-top: 45PX;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1440PX;
+    margin: 0 auto;
 }
 .ideas h2 {
     font-weight: 400;

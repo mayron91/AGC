@@ -1,0 +1,291 @@
+.contacnts {
+    width: 100%;
+    background-color: #fff;
+}
+.contacts_wr {
+    width: 100%;
+    max-width: 970PX;
+    margin: 0 auto;
+    padding-left: 70PX;
+}
+.contacts_wr h1 {
+    font-size: 64PX;
+    font-weight: 400;
+    color: #000;
+}
+.addr_wr {
+    display: flex;
+    flex-direction: row;
+}
+.map iframe {
+    width: 510PX;
+    height: 320PX;
+    border-radius: 32PX;
+}
+.delivery_cont {
+    margin-left: 60PX;
+}
+.delivery_cont h2 {
+    font-size: 24PX;
+    font-weight: 400;
+    color: #020000;
+    margin: 30PX 0 20PX -5PX;
+}
+.delivery_cont p {
+    font-size: 16PX;
+    font-weight: 300;
+    margin: 10PX 0 20PX 0;
+}
+.rec {
+    margin: 55PX 0 60PX -3PX;
+}
+.rec h2 {
+    font-size: 24PX;
+    font-weight: 400;
+    color: #020000;
+}
+.rec p {
+    font-size: 16PX;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    color: #020000;
+}
+.send {
+    width: 100%;
+    background-color: #fafafa;
+    margin-bottom: 70PX;
+}
+.send_form_wr {
+    width: 100%;
+    max-width: 835PX;
+    height: 627PX;
+    background-color: white;
+    margin: 70PX auto 0 auto;
+    border-radius: 32PX;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
+}
+.send_form_wr h2 {
+    padding: 40PX 0 0 40PX;
+    font-size: 64PX;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+.send_form {
+    padding: 40PX;
+}
+.send_form input {
+    width: 360PX;
+    height: 61PX;
+    padding: 16PX 24PX;
+    margin: 0;
+    font-size: 24PX;
+    font-weight: 300;
+    color: #898989;
+    border: 1PX solid #CDCDCD;
+    border-radius: 8PX;
+}
+.send_form input:first-child {
+    margin-right: 30PX;
+}
+.send_form textarea {
+    width: 100%;
+    max-width: 754PX;
+    min-height: 188PX;
+    padding: 16PX 24PX;
+    margin: 40PX 0;
+    font-size: 24PX;
+    font-weight: 300;
+    color: #898989;
+    border: 1PX solid #CDCDCD;
+    border-radius: 8PX;
+}
+.send_form button {
+    cursor: pointer;
+    width: 254PX;
+    height: 61PX;
+    background-color: #020000;
+    border: none;
+    border-radius: 8PX;
+    color: #fff;
+    font-size: 24PX;
+    margin-top: 20PX;
+}
+/*768*/
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .contacts_wr {
+        padding: 0;
+       } 
+       .contacts_wr h1 {
+        font-size: 32PX;
+        margin: 30PX 0 0 5PX;
+       }
+       .addr_wr {
+        flex-direction: column;
+       }
+       .map iframe {
+        width: 100%;
+        height: auto;
+        min-height: 280PX;
+        border-radius: 12PX;
+        margin: 30PX auto 0 auto;
+        padding-left: 5PX;
+       }
+       .delivery_cont {
+        margin-left: 5PX;
+       }
+       .delivery_cont h2 {
+        font-size: 18PX;
+        font-weight: 500;
+        margin: 40PX 0 20PX 0PX;
+       }
+       .delivery_cont p {
+        font-size: 14PX;
+        font-weight: 300;
+        padding: 0;
+        margin: 0 0 18PX 0;
+       }
+       .rec {
+        margin: 25PX 0 20PX 5PX;
+    }
+       .rec h2 {
+        font-size: 18PX;
+        font-weight: 600;
+        color: #020000;
+       }
+       .send {margin-bottom: 75PX;}
+       .send_form_wr {
+        margin: 40PX 0 0 0;
+        padding: 20PX;
+        border-radius: 16PX;
+        height: 467PX;
+       }
+       .send_form_wr h2 {
+        font-size: 32PX;
+        font-weight: 400;
+        padding: 0;
+        margin: 10PX 0 0 5PX;
+       }
+       .send_form {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .send_form input:first-child {
+        margin-top: 30PX;
+       }
+       .send_form input {
+        width: 100%;
+        height: 43PX;
+        margin: 0PX 40PX 20PX 5PX;
+        font-size: 16PX;
+        padding: 12PX 14PX;
+       }
+       .send_form textarea {
+        width: 100%;
+        min-height: 129PX;
+        margin: 0PX 40PX 20PX 5PX;
+        font-size: 16PX;
+        padding: 12PX 14PX;
+       }
+       .send_form button {
+        width: 100%;
+        max-width: 285PX;
+        height: 54PX;
+        font-size: 18PX;
+        margin: 10PX 0 0 5PX;
+        align-self: center;
+       }
+    }
+    /*360*/
+    @media only screen and (max-width: 767px) {
+       .contacts_wr {
+        padding: 0;
+       } 
+       .contacts_wr h1 {
+        font-size: 32PX;
+        margin: 30PX 0 0 5PX;
+       }
+       .addr_wr {
+        flex-direction: column;
+       }
+       .map iframe {
+        width: 100%;
+        min-width: 325PX;
+        height: auto;
+        min-height: 280PX;
+        border-radius: 12PX;
+        margin: 30PX auto 0 auto;
+        padding-left: 5PX;
+       }
+       .delivery_cont {
+        margin-left: 5PX;
+       }
+       .delivery_cont h2 {
+        font-size: 18PX;
+        font-weight: 500;
+        margin: 40PX 0 20PX 0PX;
+       }
+       .delivery_cont p {
+        font-size: 14PX;
+        font-weight: 300;
+        padding: 0;
+        margin: 0 0 18PX 0;
+       }
+       .rec {
+        margin: 25PX 0 20PX 5PX;
+    }
+       .rec h2 {
+        font-size: 18PX;
+        font-weight: 600;
+        color: #020000;
+       }
+       .send {margin-bottom: 75PX;}
+       .send_form_wr {
+        margin: 40PX 0 0 0;
+        padding: 20PX;
+        border-radius: 16PX;
+        height: 467PX;
+       }
+       .send_form_wr h2 {
+        font-size: 32PX;
+        font-weight: 400;
+        padding: 0;
+        margin: 10PX 0 0 5PX;
+       }
+       .send_form {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .send_form input:first-child {
+        margin-top: 30PX;
+       }
+       .send_form input {
+        width: 100%;
+        min-width: 285PX;
+        height: 43PX;
+        margin: 0PX 0 20PX 5PX;
+        font-size: 16PX;
+        padding: 12PX 14PX;
+       }
+       .send_form textarea {
+        width: 100%;
+        min-width: 285PX;
+        min-height: 129PX;
+        margin: 0PX 0 20PX 5PX;
+        font-size: 16PX;
+        padding: 12PX 14PX;
+       }
+       .send_form button {
+        width: 100%;
+        max-width: 285PX;
+        height: 54PX;
+        font-size: 18PX;
+        margin: 10PX 0 0 5PX;
+        align-self: center;
+       }
+    }
