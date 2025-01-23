@@ -104,4 +104,91 @@ b {
     padding: 16px;  /* Reset the padding */
     transition: max-height 0.3s ease-in, padding 0.3s ease-in;  /* Add transition effect */
   }
-  
+  /*768*/
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .info_wr h1 {
+    font-size: 32PX;  
+    font-weight: 400;
+    margin: 30PX 0 0 5PX;
+  }
+  .info_wr h2 {
+    font-size: 18PX;
+    font-weight: 600;
+    margin: 45PX 0 0 5PX;
+  }
+  .info_wr li {
+    font-size: 14PX;
+    font-weight: 300;
+  }
+  .info_pay h2 {
+    font-size: 18PX;
+    font-weight: 600;
+    margin: 40PX 0 0 5PX;
+  }
+  .info_pay li {
+    font-size: 14PX;
+    font-weight: 300;
+  }
+  .faq h2 {
+    margin: 30PX 0 0 5PX;
+    font-size: 18PX;
+    font-weight: 600;
+  }
+  .accordion {
+    margin: 20PX 0 0 5PX;
+  }
+  .accordion-button {
+    padding: 10PX 20PX;
+  }
+  .accordion-item span {
+    font-size: 14PX;
+    font-weight: 600;
+  }
+  .accordion-content p {
+    font-size: 14PX;
+  }
+  }
+  /*360*/
+  @media only screen and (max-width: 767px) {
+    .info_wr h1 {
+    font-size: 32PX;  
+    font-weight: 400;
+    margin: 30PX 0 0 5PX;
+  }
+  .info_wr h2 {
+    font-size: 18PX;
+    font-weight: 600;
+    margin: 45PX 0 0 5PX;
+  }
+  .info_wr li {
+    font-size: 14PX;
+    font-weight: 300;
+  }
+  .info_pay h2 {
+    font-size: 18PX;
+    font-weight: 600;
+    margin: 40PX 0 0 5PX;
+  }
+  .info_pay li {
+    font-size: 14PX;
+    font-weight: 300;
+  }
+  .faq h2 {
+    margin: 30PX 0 0 5PX;
+    font-size: 18PX;
+    font-weight: 600;
+  }
+  .accordion {
+    margin: 20PX 0 0 5PX;
+  }
+  .accordion-button {
+    padding: 10PX 20PX;
+  }
+  .accordion-item span {
+    font-size: 14PX;
+    font-weight: 600;
+  }
+  .accordion-content p {
+    font-size: 14PX;
+  }
+}
