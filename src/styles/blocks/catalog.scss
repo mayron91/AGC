@@ -185,6 +185,8 @@
   
 .catalog_place_wr {
     margin-left: 40PX;
+    display: flex;
+    flex-direction: column;
 }
 .catalog_place_wr>.catalog_plate_cards {
     margin-top: 10PX;
@@ -197,12 +199,12 @@
     margin-bottom: 10PX;
     
 }
-.pagination_cat {
-    margin: 70PX 150PX 145PX 0;
+.catalog_place_wr .pagination_cat {
+    margin: 80PX 150PX 140PX 0;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
+    align-self: flex-end;
 }
 .pagination_cat a {
     font-size: 16PX;

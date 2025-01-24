@@ -3,6 +3,8 @@
     max-width: 1440PX;
     margin: 0 auto;
     padding-left: 90PX;
+    display: flex;
+    flex-direction: column;
 }
 .blog_container h1 {
     font-size: 64PX;
@@ -14,11 +16,15 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.blog_wr>a>.ideas_card {
+.blog_wr .ideas_card {
     margin-bottom: 60PX;
 }
-.blog_container>.pagination_cat {
+.blog_container .pagination_cat {
     margin: 20PX 90PX 145PX 0;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
@@ -32,21 +38,22 @@
         margin-top: 30PX;
         margin-bottom: 40PX;
     }
-    .blog_wr>a {height: 100%;
+    .blog_wr a {height: 100%;
     margin-bottom: 0PX; width: 100%;}
-    .blog_wr>a>.ideas_card {
+    .blog_wr .ideas_card {
         margin-top: 0PX;
         margin-bottom: 0PX;
         width: 100%;
         margin-right: 0;
     }
     
-    .blog_wr>a>.ideas_card h3 {
+    .blog_wr .ideas_card h3 {
         margin: 10PX 0 0 0;
         padding: 0 0 20PX 0;
     }
-    .blog_container>.pagination_cat {
+    .blog_container .pagination_cat {
         margin: 20PX 0PX 60PX 0;
+        align-self: center;
     }
     }
     /*360*/
@@ -61,30 +68,31 @@
             margin-top: 30PX;
             margin-bottom: 40PX;
         }
-        .blog_wr>a {max-height: 200PX;
+        .blog_wr a {max-height: 200PX;
         margin-bottom: 40PX;
         width: 100%;
         min-width: 325PX;
     }
-        .blog_wr>a>.ideas_card {
+        .blog_wr .ideas_card {
             margin-top: 0PX;
             margin-bottom: 0PX;
             width: 100%;
             margin-right: 0;
         }
         
-        .blog_wr>a>.ideas_card h3 {
+        .blog_wr .ideas_card h3 {
             margin: 10PX 0 0 0;
             padding: 0;
         }
-        .blog_container>.pagination_cat {
+        .blog_container .pagination_cat {
             margin: 20PX 0PX 60PX 0;
+            align-self: center;
         }
     }
     /*spicial sizes*/
 
 @media only screen and (min-width: 460px) and (max-width: 768px)   {
-    .blog_wr>a>.ideas_card img {
+    .blog_wr .ideas_card img {
         min-height: 200PX;
     }
 }
