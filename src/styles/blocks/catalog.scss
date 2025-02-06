@@ -251,7 +251,7 @@
     border-radius: 32PX 32PX 0 0;
     background-color: #FAFAFA;
     position: absolute;
-    bottom: 0;
+    bottom: -5PX;
 }
 /*catalog*/
 .catalog_on_catalog {
@@ -283,9 +283,10 @@
     margin-top: 0PX;
     margin-bottom: 50PX;
 }
-.pagination_cat {
+.catalog_place_wr .pagination_cat {
     justify-content: center;
-    margin: 70PX 0 145PX 0;
+    align-self: center;
+    margin-right: 0;
 }
 .filter_mob {
     display: flex;
@@ -481,7 +482,7 @@
         border-radius: 32PX 32PX 0 0;
         background-color: #FAFAFA;
         position: absolute;
-        bottom: 0;
+        bottom: -5PX;
     }
     /*catalog*/
     .filter {
@@ -507,9 +508,10 @@
         margin-top: 0PX;
     margin-bottom: 50PX;
     }
-    .pagination_cat {
+    .catalog_place_wr .pagination_cat {
         justify-content: center;
         margin: 70PX 0 145PX 0;
+        align-self: center;
     }
     .filter_mob {
         display: flex;

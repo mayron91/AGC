@@ -16,20 +16,23 @@
     width: 100%;
     max-width: 1440PX;
     margin: 0 auto;
+    position: relative;
 }
+
 .block_after_slider {
     width: 100%;
-    margin-top: -183PX;
     height: 64PX;
     border-radius: 25PX 25PX 0 0;
     background-color: #FAFAFA;
     z-index: 10;
-    position: relative;
+    position: absolute;
+    bottom: 120PX;
 }
 .swiper-slide {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+    overflow: hidden;
 }
 .swiper-slide img {
     width: 100%;
@@ -331,9 +334,10 @@
     min-height: 400PX;
 }
 .block_after_slider {
-    margin-top: -3PX;
     border-radius: 12PX 12PX 0 0;
     height: 40PX;
+    bottom: -5PX;
+    z-index: 10;
 }
 .swiper-button-prev {
     width: 20PX !important;
@@ -385,15 +389,18 @@
     
 }
 .cat_card {
-    width: 150PX;
+    min-width: 150PX;
+    width: 25%;
     margin: 0 0 30PX 0;
     box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
     margin-top: 20PX;
     padding: 10PX 15PX;
+    border-radius: 12PX;
 }
 .cat_card img {
-    width: 125PX;
-    height: 125PX;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .cat_card h3 {
     font-size: 14PX;
@@ -496,7 +503,7 @@
 }
 .why_us_wr {
     overflow-x: scroll;
-    margin: 40px 0 0 25px;
+    margin: 40px 0 0 0px;
     height: 300PX;
     scrollbar-width: 0PX;
 }
@@ -524,14 +531,13 @@
 .why_us_card p {
     font-size: 14PX;
     width: 100%;
-    width: 200PX;
 }
 .why_us_card {
-    width: 210PX;
+    width: 216PX;
     height: 263PX;
     background: #FAFAFA;
     box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
-    padding: 6PX;
+    padding: 20PX 22PX;
     border-radius: 12PX;
     margin-right: 16PX;
 }
@@ -571,9 +577,9 @@
     min-height: 300PX;
 }
 .block_after_slider {
-    margin-top: -3PX;
     border-radius: 12PX 12PX 0 0;
     height: 40PX;
+    bottom: -5PX;
 }
 .swiper-button-prev {
     width: 20PX !important;
@@ -625,18 +631,22 @@
     
 }
 .cat_card {
-    width: 150PX;
+    min-width: 126PX;
+    width: 48%;
     margin: 0 0 30PX 0;
     box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
     margin-top: 20PX;
     padding: 10PX 15PX;
     border-radius: 12PX;
-    
     border-radius: 12PX;
 }
+.cat_card:nth-child(2n) {
+    margin-right: 2%;
+}
 .cat_card img {
-    width: 125PX;
-    height: 125PX;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .cat_card h3 {
     font-size: 14PX;
@@ -733,7 +743,7 @@
 /*whu us*/
 .why_us_wr {
     overflow-x: scroll;
-    margin: 40px 0 0 25px;
+    margin: 20px 0 0 0;
     height: 300PX;
     scrollbar-width: 0PX;
 }
@@ -757,18 +767,20 @@
     width: 100%;
     width: 200PX;
     margin-top: 10PX;
+    margin-bottom: 10PX;
 }
 .why_us_card p {
     font-size: 14PX;
     width: 100%;
-    width: 200PX;
+    padding: 0;
+    margin: 0;
 }
 .why_us_card {
     width: 210PX;
     height: 263PX;
     background: #FAFAFA;
     box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
-    padding: 6PX;
+    padding: 20PX 25PX;
     border-radius: 12PX;
     margin-right: 16PX;
 }
