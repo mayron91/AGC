@@ -293,6 +293,7 @@
     .inter_wr h2 {
         margin: 0;
         font-size: 24PX;
+        font-weight: 600;
     }
     .size_wr h3 {
         font-size: 18PX;
@@ -311,7 +312,7 @@
     }
     .buy_btn {
         width: 100%;
-        max-width: 325PX;
+        min-width: 325PX;
         height: 54PX;
         font-size: 18PX;
         font-weight: 400;
@@ -442,6 +443,7 @@
     .inter_wr h2 {
         margin: 0;
         font-size: 24PX;
+        font-weight: 600;
     }
     .size_wr h3 {
         font-size: 18PX;
@@ -460,7 +462,7 @@
     }
     .buy_btn {
         width: 100%;
-        max-width: 325PX;
+        min-width: 325PX;
         height: 54PX;
         font-size: 18PX;
         font-weight: 400;

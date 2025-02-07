@@ -289,3 +289,9 @@
         align-self: center;
        }
     }
+    /*special*/
+    @media (min-width: 1920px) {
+        .send_form input:first-child {
+            margin-right: 20PX;
+        }
+    }

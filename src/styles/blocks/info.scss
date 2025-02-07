@@ -100,6 +100,7 @@ b {
   }
   /* New Class for Expanded Content */
   .accordion-content.show {
+    border-radius: 0 0 16PX 16PX;
     max-height: 1000px;  /* Set an appropriate max-height */
     padding: 16px;  /* Reset the padding */
     transition: max-height 0.3s ease-in, padding 0.3s ease-in;  /* Add transition effect */
